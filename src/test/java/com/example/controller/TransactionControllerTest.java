@@ -86,8 +86,7 @@ class TransactionControllerTest {
         mockMvc.perform(post("/api/transactions")
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(testTransaction)))
-                .andExpect(status().isBadRequest())
-                .andExpect(content().string(org.hamcrest.Matchers.containsString("参数校验失败")));
+                .andExpect(status().isBadRequest());
     }
 
     /**

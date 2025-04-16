@@ -81,7 +81,7 @@ mvn clean package
 
 3. 运行应用
 ```bash
-java -jar target/transaction-demo.jar
+java -jar target/transaction-demo-1.0-SNAPSHOT.jar
 ```
 
 ### Docker部署
